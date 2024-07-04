@@ -232,16 +232,18 @@ export default function Home() {
       </section>
 
       <section className="last-image">
-        <div className="last-image-div">
-          <div className="last-image-batch">
-            <img src={imgBatch2} alt="imgBatch2" />
-            <div className="last-image-text">
-              BEWERBEN <img src={arrowLeft} alt="arrowLeft" />
+        <div className="container">
+          <div className="last-image-div">
+            <div className="last-image-batch">
+              <img src={imgBatch2} alt="imgBatch2" />
+              <div className="last-image-text">
+                BEWERBEN <img src={arrowLeft} alt="arrowLeft" />
+              </div>
             </div>
-          </div>
-          <div className="lastImg-div">
-            <img src={lastImg} alt="lastImg" />
-            <div className="lastImg-div-layer"></div>
+            <div className="lastImg-div">
+              <img src={lastImg} alt="lastImg" />
+              <div className="lastImg-div-layer"></div>
+            </div>
           </div>
         </div>
       </section>
