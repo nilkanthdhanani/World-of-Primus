@@ -1,0 +1,112 @@
+@import "../../styles/index.scss";
+
+header {
+    font-family: var(--font-family-vietnam);
+
+    .header-batch {
+        padding: 13px 0;
+        background-color: var(--bgcolor);
+        position: relative;
+
+        p {
+            text-align: center;
+            color: var(--color-white);
+            @include font15;
+
+            @include breakpoint("md-max") {
+              margin-left: 105px;
+              text-align: right;
+            }
+
+            span {
+                font-weight: 600;
+            }
+        }
+
+        .header-batch-sticker {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .header-batch-text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 104px;
+            padding: 20px 12px;
+
+            h2 {
+                color: var(--color-white);
+                @include font14;
+                font-family: var(--font-family-inter);
+            }
+        }
+    }
+
+    .header-image {
+        @include flex-center;
+        margin: 21px 0;
+    }
+
+    .header-main {
+        padding: 14px 24px 14px 34px;
+        border: 1px solid var(--border-color);
+        border-radius: 19px;
+        @include flex-between;
+
+        .header-main1 {
+            h3 {
+                @include font15;
+                line-height: 13px;
+                font-weight: 800;
+                color: var(--font-color);
+                max-width: 55px;
+            }
+        }
+
+        .header-main2 {
+            @include flex;
+            gap: 72px;
+
+            @include breakpoint("lg-max") {
+              display: none;
+            }
+
+            a {
+                @include font17;
+                color: var(--font-color);
+
+                &:last-child {
+                    font-weight: 800;
+                }
+            }
+        }
+
+        .header-main3 {
+            @include flex;
+            gap: 30px;
+
+            @include breakpoint("md-max") {
+              display: none;
+            }
+
+            h4 {
+                @include fontJetzt;
+                color: var(--font-color2);
+            }
+        }
+
+        .header-menu {
+            display: none;
+
+            img {
+              width: 24px;
+            }
+
+            @include breakpoint("lg-max") {
+              display: block;
+            }
+        }
+    }
+}

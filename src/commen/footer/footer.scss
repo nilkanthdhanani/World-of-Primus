@@ -1,0 +1,62 @@
+@import '../../styles/index.scss';
+
+footer {
+    padding: 63px 20px 36px 20px;
+    background-color: var(--bgcolor-footer);
+    color: var(--color-white);
+    font-family: var(--font-family-space);
+
+    .footer-div {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+
+        @include breakpoint("lg-max") {
+          flex-wrap: wrap
+        }
+
+        .footer-div1 {
+            h2 {
+                @include font60;
+                line-height: 57px;
+            }
+
+            p {
+                margin: 28px 0;
+                @include font18;
+                font-weight: 700;
+            }
+
+            h3 {
+                @include font18;
+                font-weight: 700;
+                margin-bottom: 26px;
+            }
+            span {
+                opacity: 60%;
+                display: block;
+                @include font18;
+                font-weight: 300;
+
+                &:first-child {
+                    margin-bottom: 20px;
+                }
+            }
+
+            .footer-div1-span {
+                span {
+
+                    &:first-child {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+
+            .footer-div1-icon {
+                @include flex;
+                gap: 30px;
+                margin-bottom: 26px;
+            }
+        }
+    }
+}
