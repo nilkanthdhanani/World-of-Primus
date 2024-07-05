@@ -14,8 +14,8 @@ header {
             @include font15;
 
             @include breakpoint("md-max") {
-              margin-left: 105px;
-              text-align: right;
+                margin: 0 20px 0 110px;
+                text-align: right;
             }
 
             span {
@@ -56,29 +56,32 @@ header {
         @include flex-between;
 
         .header-main1 {
+            @include flex;
+            
             h3 {
                 @include font15;
                 line-height: 13px;
                 font-weight: 800;
                 color: var(--font-color);
-                max-width: 55px;
-            }
-        }
-
-        .header-main2 {
-            @include flex;
-            gap: 72px;
-
-            @include breakpoint("lg-max") {
-              display: none;
+                max-width: 60px;
+                margin-right: 115px;
             }
 
-            a {
-                @include font17;
-                color: var(--font-color);
+            .header-main2 {
+                @include flex;
+                gap: 72px;
 
-                &:last-child {
-                    font-weight: 800;
+                @include breakpoint("lg-max") {
+                    display: none;
+                }
+
+                a {
+                    @include font17;
+                    color: var(--font-color);
+
+                    &:last-child {
+                        font-weight: 800;
+                    }
                 }
             }
         }
@@ -88,7 +91,7 @@ header {
             gap: 30px;
 
             @include breakpoint("md-max") {
-              display: none;
+                display: none;
             }
 
             h4 {
@@ -101,11 +104,11 @@ header {
             display: none;
 
             img {
-              width: 24px;
+                width: 24px;
             }
 
             @include breakpoint("lg-max") {
-              display: block;
+                display: block;
             }
         }
     }

@@ -23,11 +23,11 @@ export default function Header() {
           <div className="header-main">
             <div className="header-main1">
               <h3>WORLD OF PRIMUS</h3>
-            </div>
-            <div className="header-main2">
-              <a href="/">LERNE UNS KENNEN</a>
-              <a href="/">KONTAKT</a>
-              <a href="/">SHOP</a>
+              <div className="header-main2">
+                <a href="/">LERNE UNS KENNEN</a>
+                <a href="/">KONTAKT</a>
+                <a href="/">SHOP</a>
+              </div>
             </div>
             <div className="header-main3">
               <img src={linkdin} alt="linkdin" />

@@ -1,6 +1,12 @@
 
 
 
+@mixin font12 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
 @mixin font14 {
     font-size: 14px;
     font-weight: 400;
@@ -57,6 +63,12 @@
     letter-spacing: -4%;
 }
 
+@mixin font22 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
 @mixin font24 {
     font-size: 24px;
     font-weight: 400;
@@ -66,7 +78,7 @@
 @mixin font26 {
     font-size: 26px;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 28px;
 }
 
 @mixin font28 {

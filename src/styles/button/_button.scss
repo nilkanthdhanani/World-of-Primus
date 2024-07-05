@@ -4,6 +4,12 @@
     @include flex;
     gap: 30px;
 
+    @include breakpoint("sm-max") {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
     button {
         min-width: 198px;
         padding: 7px 7px 7px 20px;
@@ -61,6 +67,11 @@
           font-weight: 700;
         }
 
+        @include breakpoint("sm-max") {
+          @include font16;
+          font-weight: 600;
+        }
+
         &:first-child {
             background-color: var(--color-black);
             color: var(--color-white);
@@ -68,7 +79,7 @@
     }
 }
 
-.footer-div1-button {
+.footer-div2-button {
     button {
         min-width: 206px;
         padding: 5px 5px 5px 20px;

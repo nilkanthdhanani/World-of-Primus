@@ -13,31 +13,33 @@ export default function Footer() {
               <p>MAKE DIREKTVERTRIEB GREAT AGAIN</p>
               <img src={logoWhite} alt="logoWhite" />
             </div>
-            <div className="footer-div1">
-              <h3>DAS TEAM</h3>
-              <div className="footer-div1-span">
-                <span>Über uns</span>
-                <span>Neuer Wall 80</span>
-                <span>20354 Hamburg</span>
+            <div className="footer-div2-box">
+              <div className="footer-div2">
+                <h3>DAS TEAM</h3>
+                <div className="footer-div2-span">
+                  <span>Über uns</span>
+                  <span>Neuer Wall 80</span>
+                  <span>20354 Hamburg</span>
+                </div>
               </div>
-            </div>
-            <div className="footer-div1">
-              <h3>KONTAKT</h3>
-              <div className="footer-div1-icon">
-                <img src={linkedin2} alt="linkedin2" />
-                <img src={instagram2} alt="instagram2" />
+              <div className="footer-div2">
+                <h3>KONTAKT</h3>
+                <div className="footer-div2-icon">
+                  <img src={linkedin2} alt="linkedin2" />
+                  <img src={instagram2} alt="instagram2" />
+                </div>
+                <span>@worldofprimus</span>
+                <span>info@worldofprimus.de</span>
               </div>
-              <span>@worldofprimus</span>
-              <span>info@worldofprimus.de</span>
-            </div>
-            <div className="footer-div1">
-              <h3>JETZT BEWERBEN!</h3>
-              <div className="footer-div1-button">
-                <button>BEWERBEN
-                  <div className="button-image">
-                    <img src={telegram} alt="telegram" />
-                  </div>
-                </button>
+              <div className="footer-div2">
+                <h3>JETZT BEWERBEN!</h3>
+                <div className="footer-div2-button">
+                  <button>BEWERBEN
+                    <div className="button-image">
+                      <img src={telegram} alt="telegram" />
+                    </div>
+                  </button>
+                </div>
               </div>
             </div>
           </div>

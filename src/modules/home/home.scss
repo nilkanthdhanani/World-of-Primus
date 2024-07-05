@@ -27,7 +27,12 @@
                 }
 
                 @include breakpoint("md-max") {
-                  padding: 30px;
+                    padding: 30px;
+                }
+
+                @include breakpoint("sm-max") {
+                    padding: 15px 20px;
+                    gap: 40px;
                 }
 
                 h1 {
@@ -36,7 +41,12 @@
                     font-family: var(--font-family-space);
 
                     @include breakpoint("md-max") {
-                      @include font38;
+                        @include font38;
+                    }
+
+                    @include breakpoint("sm-max") {
+                        @include font28;
+                        font-weight: 700;
                     }
                 }
 
@@ -48,10 +58,19 @@
                         @include font18;
                         color: var(--color-black);
                         font-weight: 700;
+
+                        @include breakpoint("sm-max") {
+                            @include font16;
+                            font-weight: 600;
+                        }
                     }
 
                     span {
                         @include font18;
+
+                        @include breakpoint("sm-max") {
+                            @include font16;
+                        }
                     }
                 }
             }
@@ -61,11 +80,19 @@
                 gap: 10px;
                 margin-top: 10px;
 
+                @include breakpoint("sm-max") {
+                    @include grid1c;
+                }
+
                 .box2-image {
                     position: relative;
                     border-radius: 34px;
                     overflow: hidden;
                     max-height: 279px;
+
+                    @include breakpoint("sm-max") {
+                        height: 300px;
+                    }
 
                     img {
                         width: 100%;
@@ -85,6 +112,7 @@
 
                         h2 {
                             @include font26;
+                            line-height: 18px;
                             font-weight: 800;
                             color: var(--color-white);
                             margin: 33px 27px;
@@ -110,6 +138,10 @@
 
             @include breakpoint("lg-max") {
                 max-height: 600px;
+            }
+
+            @include breakpoint("sm-max") {
+                min-height: 420px;
             }
 
             img {
@@ -138,7 +170,11 @@
                     cursor: pointer;
 
                     @include breakpoint("lg-max") {
-                      margin-top: 60px;
+                        margin-top: 60px;
+                    }
+
+                    @include breakpoint("sm-max") {
+                        margin-top: 20px;
                     }
 
                     h3 {
@@ -151,6 +187,10 @@
 
                 .hero-grid2-text2 {
                     margin: 0 auto 36px auto;
+
+                    @include breakpoint("sm-max") {
+                        margin-bottom: 20px;
+                    }
                 }
             }
         }
@@ -163,6 +203,10 @@
     color: var(--color-black);
     padding: 0 20px;
 
+    @include breakpoint("sm-max") {
+        margin: 50px 0;
+    }
+
     h2 {
         text-align: center;
         max-width: 1230px;
@@ -170,7 +214,13 @@
         @include font60;
 
         @include breakpoint("md-max") {
-          @include font36;
+            @include font36;
+        }
+
+        @include breakpoint("sm-max") {
+            @include font26;
+            font-weight: 600;
+            margin-bottom: 30px;
         }
     }
 
@@ -187,6 +237,10 @@
             gap: 40px;
         }
 
+        @include breakpoint("sm-max") {
+            gap: 20px;
+        }
+
         h3 {
             @include font40;
             max-width: 277px;
@@ -196,7 +250,12 @@
             }
 
             @include breakpoint("md-max") {
-              @include font32;
+                @include font32;
+            }
+
+            @include breakpoint("sm-max") {
+                @include font24;
+                font-weight: 500;
             }
         }
     }
@@ -232,9 +291,17 @@
                 margin-top: -45px;
                 position: relative;
 
+                @include breakpoint("lg-max") {
+                    margin-top: -30px;
+                }
+
                 img {
                     max-width: 265px;
                     min-height: auto;
+
+                    @include breakpoint("lg-max") {
+                        max-width: 200px;
+                    }
                 }
 
                 .deiner-grid1-text {
@@ -259,13 +326,23 @@
             flex-direction: column;
             gap: 50px;
 
+            @include breakpoint("sm-max") {
+                padding: 15px 20px;
+                gap: 30px;
+            }
+
             h2 {
                 @include font70;
                 color: var(--color-white);
                 font-family: var(--font-family-space);
 
                 @include breakpoint("md-max") {
-                  @include font36;
+                    @include font36;
+                }
+
+                @include breakpoint("sm-max") {
+                    @include font26;
+                    font-weight: 600;
                 }
             }
 
@@ -277,7 +354,12 @@
                 gap: 37px;
 
                 @include breakpoint("md-max") {
-                  @include grid1c;
+                    @include grid1c;
+                }
+
+                @include breakpoint("sm-max") {
+                    padding: 15px 20px;
+                    gap: 20px;
                 }
 
                 .deiner-grid2-div1 {
@@ -288,6 +370,10 @@
                         @include flex;
                         gap: 14px;
                         margin-bottom: 19px;
+
+                        @include breakpoint("sm-max") {
+                          margin-bottom: 15px;
+                        }
 
                         .planet-image {
                             padding: 22px;
@@ -304,11 +390,21 @@
                         h3 {
                             @include font28;
                             font-weight: 700;
+
+                            @include breakpoint("sm-max") {
+                              @include font22;
+                              font-weight: 600;
+                            }
                         }
                     }
 
                     p {
                         @include font19;
+
+                        @include breakpoint("sm-max") {
+                          @include font12;
+                          font-weight: 500;
+                        }
                     }
                 }
             }
@@ -318,6 +414,10 @@
 
 .erwatet {
     margin: 68px 0;
+
+    @include breakpoint("sm-max") {
+      margin: 50px 0;
+    }
 
     .erwatet-div {
         font-family: var(--font-family-open);
@@ -330,8 +430,14 @@
             text-align: center;
 
             @include breakpoint("md-max") {
-              @include font36;
-              margin-bottom: 40px;
+                @include font36;
+                margin-bottom: 40px;
+            }
+
+            @include breakpoint("sm-max") {
+              @include font26;
+              font-weight: 600;
+              margin-bottom: 30px;
             }
         }
 
@@ -344,8 +450,13 @@
             margin-bottom: 23px;
 
             @include breakpoint("md-max") {
-              @include font18;
-              font-weight: 600;
+                @include font18;
+                font-weight: 600;
+            }
+
+            @include breakpoint("sm-max") {
+              @include font16;
+              font-weight: 500;
             }
         }
 
@@ -358,7 +469,7 @@
             }
 
             @include breakpoint("md-max") {
-              display: block;
+                display: block;
             }
 
             h3 {
@@ -377,12 +488,21 @@
                 }
 
                 @include breakpoint("md-max") {
-                  margin: 0;
-                  text-align: center;
+                    margin: 0;
+                    text-align: center;
 
-                  &:nth-child(1) {
-                    margin-top: 50px;
-                  }
+                    &:nth-child(1) {
+                        margin-top: 50px;
+                    }
+                }
+
+                @include breakpoint("md-max") {
+                    @include font24;
+                    font-weight: 600;
+
+                    &:nth-child(1) {
+                        margin: 0;
+                    }
                 }
             }
 
@@ -394,7 +514,11 @@
                 }
 
                 @include breakpoint("md-max") {
-                  margin: 30px 0;
+                    margin: 30px 0;
+                }
+
+                @include breakpoint("sm-max") {
+                  margin: 20px 0;
                 }
 
                 .erwatet-flex-div-img {
@@ -402,7 +526,13 @@
                     @include flex;
 
                     @include breakpoint("md-max") {
-                      justify-content: center;
+                        justify-content: center;
+                    }
+
+                    @include breakpoint("sm-max") {
+                      img {
+                        width: 100%;
+                      }
                     }
 
                     .erwatet-text {
@@ -412,13 +542,17 @@
                         left: 60px;
 
                         @include breakpoint("md-max") {
-                          left: auto;
+                            left: auto;
                         }
 
                         h4 {
                             @include font24;
                             font-weight: 600;
                             letter-spacing: 5%;
+
+                            @include breakpoint("sm-max") {
+                              @include font20;
+                            }
                         }
                     }
                 }
@@ -429,7 +563,7 @@
             margin-top: 30px;
 
             @include breakpoint("lg-max") {
-              display: none;
+                display: none;
             }
 
             .erwatet-gridimg {
@@ -504,11 +638,11 @@
             margin-top: 30px;
 
             @include breakpoint("lg-max") {
-              display: block;
+                display: block;
             }
 
             @include breakpoint("md-max") {
-              margin-top: 50px;
+                margin-top: 50px;
             }
 
             .erwatet-grid-text-box {
@@ -519,6 +653,10 @@
 
                 .erwatet-grid-text {
                     max-width: 180px;
+
+                    @include breakpoint("sm-max") {
+                      max-width: 400px;
+                    }
 
                     .erwatet-icon {
                         max-width: 128px;
@@ -541,6 +679,10 @@
                         margin: 5px 0 40px 0;
                         text-align: center;
                         color: var(--color-black);
+
+                        @include breakpoint("sm-max") {
+                          margin: 5px 0 10px 0;
+                        }
                     }
 
                     p {
@@ -566,9 +708,17 @@
             position: relative;
             z-index: 1;
 
+            @include breakpoint("lg-max") {
+                margin-bottom: -25px;
+            }
+
             img {
                 max-width: 265px;
                 min-height: auto;
+
+                @include breakpoint("lg-max") {
+                    max-width: 200px;
+                }
             }
 
             .last-image-text {
@@ -589,6 +739,11 @@
 
             img {
                 width: 100%;
+
+                @include breakpoint("sm-max") {
+                  min-height: 270px;
+                  object-fit: cover;
+                }
             }
 
             .lastImg-div-layer {
