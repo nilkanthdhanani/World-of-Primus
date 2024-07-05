@@ -7,6 +7,7 @@ header {
         padding: 13px 0;
         background-color: var(--bgcolor);
         position: relative;
+        cursor: pointer;
 
         p {
             text-align: center;
@@ -47,6 +48,10 @@ header {
     .header-image {
         @include flex-center;
         margin: 21px 0;
+
+        img {
+            cursor: pointer;
+        }
     }
 
     .header-main {
@@ -57,7 +62,7 @@ header {
 
         .header-main1 {
             @include flex;
-            
+
             h3 {
                 @include font15;
                 line-height: 13px;
@@ -65,6 +70,7 @@ header {
                 color: var(--font-color);
                 max-width: 60px;
                 margin-right: 115px;
+                cursor: pointer;
             }
 
             .header-main2 {
@@ -86,29 +92,39 @@ header {
             }
         }
 
-        .header-main3 {
+        .header-main3-box {
             @include flex;
             gap: 30px;
 
-            @include breakpoint("md-max") {
+            .header-main3 {
+                @include flex;
+                gap: 30px;
+
+                img {
+                    cursor: pointer;
+                }
+
+                @include breakpoint("md-max") {
+                    display: none;
+                }
+
+                h4 {
+                    @include fontJetzt;
+                    color: var(--font-color2);
+                }
+            }
+
+            .header-menu {
                 display: none;
-            }
 
-            h4 {
-                @include fontJetzt;
-                color: var(--font-color2);
-            }
-        }
+                img {
+                    width: 24px;
+                    cursor: pointer;
+                }
 
-        .header-menu {
-            display: none;
-
-            img {
-                width: 24px;
-            }
-
-            @include breakpoint("lg-max") {
-                display: block;
+                @include breakpoint("lg-max") {
+                    display: block;
+                }
             }
         }
     }

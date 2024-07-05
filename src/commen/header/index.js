@@ -29,13 +29,15 @@ export default function Header() {
                 <a href="/">SHOP</a>
               </div>
             </div>
-            <div className="header-main3">
-              <img src={linkdin} alt="linkdin" />
-              <img src={instagram} alt="instagram" />
-              <h4>JETZT BEWERBEN</h4>
-            </div>
-            <div className="header-menu">
-              <img src={menu} alt="menu" />
+            <div className="header-main3-box">
+              <div className="header-main3">
+                <img src={linkdin} alt="linkdin" />
+                <img src={instagram} alt="instagram" />
+                <h4>JETZT BEWERBEN</h4>
+              </div>
+              <div className="header-menu">
+                <img src={menu} alt="menu" />
+              </div>
             </div>
           </div>
         </div>

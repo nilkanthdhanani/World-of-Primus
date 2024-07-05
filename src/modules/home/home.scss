@@ -42,6 +42,7 @@
 
                     @include breakpoint("md-max") {
                         @include font38;
+                        letter-spacing: normal;
                     }
 
                     @include breakpoint("sm-max") {
@@ -225,10 +226,9 @@
     }
 
     .team-div {
-        max-width: 1105px;
-        margin: 0 auto;
         display: flex;
         align-items: flex-end;
+        justify-content: center;
         gap: 80px;
 
         @include breakpoint("lg-max") {
@@ -290,6 +290,7 @@
                 @include flex-center;
                 margin-top: -45px;
                 position: relative;
+                cursor: pointer;
 
                 @include breakpoint("lg-max") {
                     margin-top: -30px;
@@ -310,6 +311,10 @@
                     @include flex;
                     gap: 14px;
                     padding-left: 10px;
+
+                    @include breakpoint("lg-max") {
+                        bottom: 8px;
+                    }
 
                     img {
                         width: 24px;
@@ -707,6 +712,7 @@
             margin-bottom: -35px;
             position: relative;
             z-index: 1;
+            cursor: pointer;
 
             @include breakpoint("lg-max") {
                 margin-bottom: -25px;
@@ -727,6 +733,10 @@
                 @include flex;
                 gap: 14px;
                 padding-left: 10px;
+
+                @include breakpoint("lg-max") {
+                    top: 8px;
+                }
 
                 img {
                     width: 24px;

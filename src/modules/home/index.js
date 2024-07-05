@@ -56,14 +56,16 @@ export default function Home() {
       </section>
 
       <section className="team">
-        <h2>TEAM PRIMUS IST <br /> SEIT 3 JAHREN DAS ERFOLGREICHSTE TEAM IM DIREKTVERTRIEB BEI VODAFONE</h2>
-        <div className="team-div">
-          <h3>MASTERCLASS PRIMUS</h3>
-          <div className="team-div-button">
-            <button>BEWERBEN</button>
-            <button>UNSER TEAM</button>
-            <button>SHOP</button>
-            <button>ERFOLGE</button>
+        <div className="containerH">
+          <h2>TEAM PRIMUS IST <br /> SEIT 3 JAHREN DAS ERFOLGREICHSTE TEAM IM DIREKTVERTRIEB BEI VODAFONE</h2>
+          <div className="team-div">
+            <h3>MASTERCLASS PRIMUS</h3>
+            <div className="team-div-button">
+              <button>BEWERBEN</button>
+              <button>UNSER TEAM</button>
+              <button>SHOP</button>
+              <button>ERFOLGE</button>
+            </div>
           </div>
         </div>
       </section>
